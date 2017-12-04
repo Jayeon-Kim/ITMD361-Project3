@@ -5,10 +5,6 @@ function initMap() {
     zoom :7,
     center : seoul
   });
-   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom :7,
-    center : home
-  });
   var marker = new google.maps.Marker({
     position: seoul,
     map : map
@@ -17,5 +13,4 @@ function initMap() {
     position: home,
     map : map
   });
-  
 }
