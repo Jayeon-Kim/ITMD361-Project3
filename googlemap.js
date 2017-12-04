@@ -1,6 +1,6 @@
 function initMap() {
-  var seoul = {['Seoul', 37.566535, 126.977969]};
-  var home = {['My home', 37.478487, 126.864288]};
+  var seoul = { lat : 37.566535, lng : 126.977969};
+  var home = {lat : 37.478487, lng : 126.864288};
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom :8,
     center : seoul
