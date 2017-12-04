@@ -15,21 +15,17 @@ function initMap() {
   });
 }
 
-var sliderOptions = 
-{ sliderId: "slider", 
-  startSlide: 0, 
-  effect: "series1", 
-  effectRandom: false, 
-  pauseTime: 2800, 
-  transitionTime: 1200, 
-  slices: 14, boxes: 8,  
-  hoverPause: 1, 
-  autoAdvance: true, 
-  thumbnailsWrapperId: "thumb_container_id", 
-  m: false, license: "mylicense" 
-}; 
-var imageSlider=new mcImgSlider(sliderOptions); 
-function mcImgSlider(i){
-	for(var I = function(a))
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+     var i;
+    var x = document.getElementsByClassName("photo");
+     for (i = 0; i < x.length; i++) {
+      x[i].style.display  = "none"; 
+    }
+    slideIndex++;
+     if (slideIndex > x.length) {slideIndex = 1} 
+     x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel,  2000); // Change image every 2 seconds
 }
-	
